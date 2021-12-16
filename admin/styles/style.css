@@ -1,0 +1,75 @@
+.btn-font {
+    font-size: 16px;
+}
+
+.width-100 {
+    width: 50px !important;
+}
+
+.hinh-anh {
+    border: 1px solid #ccc;
+    width: 65px!important;
+}
+
+.reset {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+table tbody td a i,
+table tbody td a p,
+table tbody td button p {
+    margin: 0;
+    display: inline-block;
+}
+
+.none button {
+    margin: 0 !important;
+}
+
+.block button {
+    display: none;
+    margin: 0!important;
+}
+
+.font15 {
+    font-size: 15px !important;
+}
+
+@media screen and (max-width:1350px) {
+    .block button {
+        display: inline-block;
+    }
+    .none {
+        background-color: #17c671;
+        display: none!important;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    table tbody td a p,
+    table tbody td button p {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    table tbody td,
+    table thead th {
+        padding: 0!important;
+    }
+    .block {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .table-sp {
+        width: 100%;
+        overflow: auto!important;
+    }
+    table tbody td,
+    table thead th {
+        padding: 10px!important;
+    }
+}
