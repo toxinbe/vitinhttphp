@@ -46,8 +46,8 @@ if(count($_POST)>0){
 
     $viTriSP=timViTriSPtrongGioHang($maSanPhamChonMua,$_SESSION["maSanPham"]);
     if($viTriSP>-1){
-        $_SESSION['soLuongMua'][$viTriSP]=$soLuongMua;
-        $_SESSION["tongSoLuongMua"]=$soLuongMua;
+        $_SESSION['soLuongMua'][$viTriSP]+=$soLuongMua;
+        $_SESSION["tongSoLuongMua"]+=$soLuongMua;
     }else{
         $viTriSP=timViTriSPtrongDS($maSanPhamChonMua,$arrMaSP);
         if($viTriSP>-1){
@@ -58,8 +58,8 @@ if(count($_POST)>0){
             if(!isset( $_SESSION['soLuongMua'][$soLoaiSanPhamDangCoTrongGio])){
                 $_SESSION['soLuongMua'][$soLoaiSanPhamDangCoTrongGio]=0;
             }
-            $_SESSION['soLuongMua'][$soLoaiSanPhamDangCoTrongGio]=$soLuongMua;
-            $_SESSION["tongSoLuongMua"]=$soLuongMua;
+            $_SESSION['soLuongMua'][$soLoaiSanPhamDangCoTrongGio]+=$soLuongMua;
+            $_SESSION["tongSoLuongMua"]+=$soLuongMua;
         }
     }
     echo'
