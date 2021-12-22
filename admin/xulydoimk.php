@@ -14,7 +14,8 @@ if(count($_POST)>0){
     }
 
     if($oldpassword == $_SESSION['sql'] &&$oldpassword>""&&$newpassword>""){
-        $_SESSION['password']=$newpassword;            
+        $_SESSION['password']=$newpassword;
+        $_SESSION['sql']=$newpassword;            
         echo'
         <script>
             window.alert("Đổi mật khẩu thành công!");
