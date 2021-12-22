@@ -21,8 +21,8 @@ if(count($_POST)>0){
         if (sizeof($_SESSION["dangKy"])>0){
             $viTriKhachHangTrongDS=sizeof($_SESSION["dangKy"]);
         }
-        $_SESSION["dangKy"]["email"]=$email;//them kh vao ds kh
-        $_SESSION["dangKy"]["password"]=$password;
+        $_SESSION["dangKy"][$viTriKhachHangTrongDS]["email"]=$email;//them kh vao ds kh
+        $_SESSION["dangKy"][$viTriKhachHangTrongDS]["password"]=$password;
         echo'
         <script>
             window.alert("Đăng ký thành công!");
