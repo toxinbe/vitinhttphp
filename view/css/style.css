@@ -871,6 +871,7 @@ ol.slide-indicators li.active {
 }
 
 .copyright>p {
+    font-style: italic;
     margin: 10px 0 0;
 }
 

@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright">
-                        <p>&copy;<?php echo date("Y");?> Trương Ngọc Toàn & Nguyễn Hoàng Tiến</p>
+                        <p>Copyright&copy; <?php echo date("Y");?> Nguyễn Hoàng Tiến - ToxinBe</p>
                     </div>
                 </div>
             </div>
